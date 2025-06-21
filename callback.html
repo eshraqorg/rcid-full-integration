@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Callback</title></head>
+<body>
+  <script>
+    const url = new URL(window.location.href);
+    const code = url.searchParams.get('code') || '';
+    window.location = `token.php?code=${code}`;
+  </script>
+</body></html>
